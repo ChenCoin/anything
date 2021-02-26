@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="lineMargin">32dp</dimen>
+    <dimen name="effectSize">256dp</dimen>
+    <dimen name="maxEffect">128dp</dimen>
+    <dimen name="minBack">32dp</dimen>
+</resources>
