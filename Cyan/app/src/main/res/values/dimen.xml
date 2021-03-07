@@ -4,4 +4,6 @@
     <dimen name="effectSize">256dp</dimen>
     <dimen name="maxEffect">128dp</dimen>
     <dimen name="minBack">32dp</dimen>
+    <dimen name="fakeHeight">21dp</dimen>
+    <dimen name="touchBarHeight">100dp</dimen>
 </resources>

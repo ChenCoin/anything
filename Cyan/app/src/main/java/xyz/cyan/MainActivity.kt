@@ -10,12 +10,15 @@ import xyz.cyan.bezier.BezierView
 import xyz.cyan.bezier.MenuBezierView
 import xyz.cyan.bezier.RightBezierView
 import xyz.cyan.bezier.RightMenuBezierView
+import xyz.cyan.touchbar.TouchBarManager
 
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        TouchBarManager(findViewById(R.id.touchBar)).init()
 
         val launcherMode = findViewById<TextView>(R.id.launcherMode)
         val appMode = findViewById<TextView>(R.id.appMode)

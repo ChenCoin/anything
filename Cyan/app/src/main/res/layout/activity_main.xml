@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#DCDC99">
 
     <FrameLayout
         android:layout_width="420dp"
@@ -110,9 +111,13 @@
             android:id="@+id/rightLine2"
             android:layout_width="4dp"
             android:layout_height="match_parent"
+            android:layout_gravity="end"
             android:layout_marginTop="32dp"
-            android:layout_marginBottom="32dp"
-            android:layout_gravity="end" />
+            android:layout_marginBottom="32dp" />
     </FrameLayout>
+
+    <include
+        android:id="@+id/touchBar"
+        layout="@layout/touch_bar" />
 
 </FrameLayout>

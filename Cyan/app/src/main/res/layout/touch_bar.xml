@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/touchBarHeight"
+    android:layout_gravity="bottom">
+
+    <FrameLayout
+        android:id="@+id/viewArea"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/touchBarHeight"
+        android:layout_gravity="center|bottom"
+        android:background="@drawable/touch_bgr"
+        android:minWidth="240dp"
+        android:padding="1dp"
+        android:visibility="invisible">
+
+        <View
+            android:id="@+id/fakeLine"
+            android:layout_width="120dp"
+            android:layout_height="4dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="8dp"
+            android:background="@drawable/touch_bar" />
+
+    </FrameLayout>
+
+    <View
+        android:id="@+id/realLine"
+        android:layout_width="120dp"
+        android:layout_height="4dp"
+        android:layout_gravity="center|bottom"
+        android:layout_margin="8dp"
+        android:background="@drawable/touch_bar" />
+
+    <View
+        android:id="@+id/touchArea"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_gravity="bottom" />
+
+</FrameLayout>
