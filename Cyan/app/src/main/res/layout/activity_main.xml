@@ -116,8 +116,9 @@
             android:layout_marginBottom="32dp" />
     </FrameLayout>
 
-    <include
+    <xyz.cyan.touchbar.TouchBar
         android:id="@+id/touchBar"
-        layout="@layout/touch_bar" />
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
 </FrameLayout>

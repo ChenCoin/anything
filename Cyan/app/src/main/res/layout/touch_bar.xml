@@ -9,10 +9,17 @@
         android:layout_width="wrap_content"
         android:layout_height="@dimen/touchBarHeight"
         android:layout_gravity="center|bottom"
-        android:background="@drawable/touch_bgr"
-        android:minWidth="240dp"
-        android:padding="1dp"
         android:visibility="invisible">
+
+        <FrameLayout
+            android:id="@+id/viewContent"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/touch_bgr"
+            android:minWidth="240dp"
+            android:padding="1dp">
+
+        </FrameLayout>
 
         <View
             android:id="@+id/fakeLine"

@@ -10,7 +10,7 @@ import xyz.cyan.bezier.BezierView
 import xyz.cyan.bezier.MenuBezierView
 import xyz.cyan.bezier.RightBezierView
 import xyz.cyan.bezier.RightMenuBezierView
-import xyz.cyan.touchbar.TouchBarManager
+import xyz.cyan.touchbar.TouchBar
 
 class MainActivity : AppCompatActivity() {
 
@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        TouchBarManager(findViewById(R.id.touchBar)).init()
+        findViewById<TouchBar>(R.id.touchBar).init()
 
         val launcherMode = findViewById<TextView>(R.id.launcherMode)
         val appMode = findViewById<TextView>(R.id.appMode)
